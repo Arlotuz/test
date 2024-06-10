@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check App Installation</title>
+</head>
+<body>
+    <button onclick="checkApp()">Check If App is Installed</button>
+
+    <script>
+        function checkApp() {
+            var appPackageId = "uz.dida.payme";
+            var appLink = "intent://" + appPackageId + "#Intent;package=" + appPackageId + ";scheme=payme;end";
+
+            location.href = appLink;
+        }
+    </script>
+</body>
+</html>
